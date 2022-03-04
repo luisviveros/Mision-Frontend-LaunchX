@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To infinty and beyond</title>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="uno.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    
+    <img src="D:\MicrosoftCourse\Propedeutico\HTML\Astronauta.remove2.png" alt="beyond" width="250px"> <br>
+
+    <a href="Pasteleria to infinity and beyond.html"><button type="submit" class="boton2 uno"><span>return</span></button></a>
+      
+
+    <br> <br>
+    <p class="orden">Put your order.....</p> <br>
+
+    <div class="formulario"> 
+        <form action="/accion.js" id="form1" method="post">
+        <label class="texto" for="nombre">Nombre:</label>
+        <input type="nombre" id="nombre" name="nombre"><br><br>
+        <label class="texto" for="apellido">Apellido:</label>
+        <input type="apellido" id="apellido" name="apellido" form="form1"> <br><br>
+        <label class="texto" for="Telefono">Telefono:</label>
+        <input type="telefono" id="Telefono" name="Telefono" form="form1"> <br><br>
+        <label class="texto" for="CorreoElectronico">Email:      </label>
+        <input type="CorreoElectronico" id="CorreoElectronico" name="Correo Electronico" form="form1"> <br><br>
+        <label class="sabor" for="sabor">Elige el sabor de tu pastel</label>
+        <input list="sabor">
+        <datalist id="sabor">
+            <option value="Cometa Naranja">
+            <option value="Luna Chocolatosa">
+            <option value="La nave marmoleada">
+            <option value="Martecheescake">
+            <option value="Ferreronauta">
+             <option value="Combinado"></option>
+        </datalist> <br> <br>
+        <p class="texto">Si elegiste combinado indica cuales son los dos sabores que deseas combinar</p>
+        <input type="combinar_sabor" id="combinar_sabor" name="combinar_sabor" form="form1"> <br><br>
+        
+        <label class="decoracion" for="decoracion">Elige la decoracion de tu pastel</label><br>
+        <input list="decoracion">
+        <datalist id="decoracion">
+            <option value="Figura caracteristica en 2D">
+            <option value="Figura caracteristica en 3D">
+            <option value="Cubierta de frutas a elegir">
+            <option value="Cubierta de chantiyin a elegir">
+             <option value="Combinado"></option>
+        </datalist> <br><br>
+        <p class="texto">Si elegiste combinado indica cuales son los dos sabores que deseas combinar</p>
+        <input type="combinar_decoracion" id="combinar_decoracion" name="combinar_decoracion" form="form1"> <br><br>
+        <p class="texto">Si deseas agregar algo  mas escribelo aqui:</p>
+        <textarea name="agregar" rows="4" cols="30"></textarea>
+        <br><br>
+        <input type="button" id="submit" name="submit" value="submit" onclick="alert('Tu orden ha sido enviada');"><br><br>
+        <input type="reset">
+
+        </form>
+    </div>
+   
+</body>
